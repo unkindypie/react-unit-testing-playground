@@ -6,7 +6,7 @@ const TestAxios = ({ url }) => {
 
   useEffect(() => {
     axios.get(url).then((res) => setState(res.data));
-  }, []);
+  }, [url]);
 
   return (
     <div>
