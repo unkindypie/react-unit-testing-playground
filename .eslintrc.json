@@ -1,4 +1,8 @@
 {
   "extends": ["plugin:react-app/recommended"],
-  "plugins": ["cypress"]
+  "plugins": ["cypress"],
+  // для cypress
+  "globals": {
+    "cy": true
+  }
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 /// <reference types="Cypress" />
 // ^ строку сверху нужно добавлять для автокомплита
 
@@ -24,6 +25,7 @@ describe("complete e to e test", () => {
     cy.get("#text1").type("New Text {enter}"); // (это инпут)
     cy.contains("Change: New Text");
     cy.contains("Submit Value: New Text");
+
     //axios test
     cy.request("https://jsonplaceholder.typicode.com/posts/1").should((res) => {
       expect(res.body).not.to.be.null;
