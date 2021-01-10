@@ -1,13 +1,13 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 import { render, fireEvent, cleanup } from "@testing-library/react";
 
-import TestReducer from "./TestReducer";
-import * as Actions from "./store/test-reducer/actions";
+import TestReducer from "../TestReducer";
+import * as Actions from "../store/test-reducer/actions";
 import {
   TestReducer as Reducer,
   initialState,
-} from "./store/test-reducer/reducer";
+} from "../store/test-reducer/reducer";
 
 afterEach(cleanup);
 

@@ -10,13 +10,13 @@ import {
 // файл с таким же именем как и модуль
 import axiosMock from "axios";
 
-import TestAxios from "./TestAxios";
+import TestAxios from "../TestAxios";
 
 afterEach(cleanup);
 
 it("Async axios request works", async () => {
   // указываем, что будет возвращать промис с этого метода
-  axiosMock.get.mockResolvedValue({ data: { title: "some title" } });
+  axiosMock.get.mockResolvedValue({ data: { title: "test title" } });
   const url = "https://jsonplaceholder.typicode.com/posts/1";
 
   const { getByText, getByTestId, rerender, findByTestId } = render(
@@ -32,7 +32,7 @@ it("Async axios request works", async () => {
   */
   const resolvedEl = await findByTestId("title");
 
-  expect(resolvedEl.textContent).toBe("some title");
+  expect(resolvedEl.textContent).toBe("test title");
 
   expect(axiosMock.get).toHaveBeenCalledTimes(1);
   expect(axiosMock.get).toHaveBeenCalledWith(url);

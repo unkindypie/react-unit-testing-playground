@@ -1,7 +1,7 @@
 import React from "react";
 import { render, cleanup, fireEvent } from "@testing-library/react";
 
-import TestControlledForm from "./TestControlledForm";
+import TestControlledForm from "../TestControlledForm";
 
 afterEach(cleanup);
 
