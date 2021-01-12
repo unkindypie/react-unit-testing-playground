@@ -1,5 +1,6 @@
-Some dummy project where I'm taking a look to libs for react unit testing, coverage & a little bit CI.
 [![Coverage Status](https://coveralls.io/repos/github/unkindypie/react-unit-testing-playground/badge.svg?branch=main)](https://coveralls.io/github/unkindypie/react-unit-testing-playground?branch=main)
+
+Some dummy project where I'm taking a look to libs for react unit testing, coverage & a little bit CI.
 
 ## Available Scripts
 
